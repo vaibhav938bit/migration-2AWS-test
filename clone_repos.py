@@ -1,3 +1,11 @@
+import os
+
+aws_access_key_id = os.environ.get("AWS_ACCESS_KEY_ID")
+aws_secret_access_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
+gcp_sa_key = os.environ.get("GCP_SA_KEY")
+
+# Use the credentials in your script for authentication with AWS and Google Cloud
+
 import subprocess
 
 def clone_from_codecommit(repo_url, destination_path):
